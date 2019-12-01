@@ -1,0 +1,15 @@
+
+//Part One
+for(var i = 0; i < values.length; i++) { sum += Math.floor(values[i] / 3) - 2; }
+
+//Part Two
+for(var i = 0; i < values.length; i++) { 
+tempFuel = values[i]; 
+while (tempFuel > 0) {
+tempFuel = Math.floor(tempFuel / 3) - 2;
+if (tempFuel > 0) { 
+fuel += tempFuel; 
+}
+}
+tempFuel = 0;
+}
